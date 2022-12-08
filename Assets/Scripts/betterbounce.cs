@@ -6,6 +6,7 @@ public class betterbounce : MonoBehaviour
 {
     // Start is called before the first frame update
     private BoxCollider2D bc;
+    
     private void Awake()
     {
         bc = GetComponent<BoxCollider2D>();

@@ -8,6 +8,10 @@ TagManager:
   - right
   - ball
   - bottom
+  - Points
+  - MoreBalls
+  - Longer
+  - GetBall
   layers:
   - Default
   - TransparentFX

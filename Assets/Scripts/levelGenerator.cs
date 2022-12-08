@@ -27,7 +27,7 @@ public class levelGenerator : MonoBehaviour
         {
             if(color.color.Equals(pixel))
             {
-                Vector2 pos= new Vector2(-13.51f+x*1.93f,-2.27f+y*0.55f);
+                Vector2 pos= new Vector2(-13.46f+x*1.92f,-1.8f+y*0.54f);
                 Instantiate(color.prefab,pos, Quaternion.identity);
             }
         }

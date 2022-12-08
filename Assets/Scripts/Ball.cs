@@ -6,6 +6,8 @@ public class Ball : MonoBehaviour
 {
     public float speed;
     private Rigidbody2D rb;
+
+
     public void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -17,6 +19,13 @@ public class Ball : MonoBehaviour
         transform.parent = null;
         rb.simulated = true;
         rb.velocity = force.normalized * speed;
+    }
+
+    public void getBall(GameObject parent)
+    {
+        rb.velocity = new Vector2(0f,0f);
+        rb.simulated = false;
+        gameObject.transform.parent = parent.transform;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -31,4 +40,7 @@ public class Ball : MonoBehaviour
     {
         rb.velocity = rb.velocity.normalized * speed;
     }
+
+
+
 }

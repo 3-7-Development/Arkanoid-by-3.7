@@ -20,8 +20,13 @@ public class control : MonoBehaviour
         rb.velocity = new Vector2(Input.GetAxis("Horizontal")*speed, 0.0f);
         if(transform.childCount > 0 && Input.GetButtonDown("Jump"))
         {
-            Ball ball = rb.GetComponentInChildren<Ball>();
-            ball.Shot(force);
+            Ball[] ball = rb.GetComponentsInChildren<Ball>();
+            
+            foreach(Ball a in ball)
+            {
+                a.Shot(force);
+            }
+          
         }
     }
 }
