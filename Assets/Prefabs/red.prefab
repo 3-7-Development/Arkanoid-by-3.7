@@ -152,3 +152,6 @@ MonoBehaviour:
   - {fileID: 7369538277468839335, guid: 160d1d58a2e3b77418b1df017ccd5938, type: 3}
   - {fileID: 3372363481783514369, guid: 5d8fb214b38885346befd780b69898b1, type: 3}
   - {fileID: 6706171476588991103, guid: c17fc31c58d30cc4fa3735df1d02c3a8, type: 3}
+  collisionParticleSystem: {fileID: 1794717411498856799, guid: 93efe1363a9f085478e01c8d1c50aeff, type: 3}
+  sr: {fileID: 7872666263956998108}
+  once: 1
